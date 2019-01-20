@@ -10,9 +10,8 @@ chai.use(chaiHttp);
 
 it('Test of index.js', function(done){
     chai.request(server)
-        .get("/")
+        .get("/hello")
         .end(function(err, res){
-            expect(res.body.msg).string;
             expect(res).status(200);
             done();
         });

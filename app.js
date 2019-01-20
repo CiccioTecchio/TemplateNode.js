@@ -19,5 +19,5 @@ let server = app.listen(ip.port, ip.address, function(){
     let address = server.address().address;
     let port = server.address().port;
     console.log("Listening on " + address + ":" + port);
-})
+});
 module.exports = app;
